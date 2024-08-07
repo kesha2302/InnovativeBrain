@@ -5,12 +5,20 @@ use App\Http\Controllers\AdminSignupLoginController;
 use App\Http\Controllers\CareerController;
 use App\Http\Controllers\CertificateController;
 use App\Http\Controllers\ClientDetailController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+//Frontend
+Route::get('/', [HomeController::class, 'home']);
+Route::get('/service', [HomeController::class, 'Services']);
+Route::get('/about', [HomeController::class, 'about']);
+Route::get('/contact', [HomeController::class, 'contact']);
 
 Route::get('/Admin', [AdminController::class, 'adminhome']);
 
@@ -66,3 +74,11 @@ Route::post('/clientdetail/update/{id}',[ClientDetailController::class,'clientde
 
 // Admin Certificate Details
 Route::get('/Admincertificate',[CertificateController::class,'admincertificateview']);
+Route::get('/Admincertificateform',[CertificateController::class,'admincertificteform']);
+Route::post('/Admincertificateform2', [CertificateController::class, 'certificatedata']);
+Route::get('/Admincertificatetrash',[CertificateController::class,'certificatetrash']);
+Route::get('/certificate/delete/{id}',[CertificateController::class,'certificatedelete'])->name('certificate.delete');
+Route::get('/certificate/frocedelete/{id}',[CertificateController::class,'certificateforcedelete'])->name('certificate.forcedelete');
+Route::get('/certificate/restore/{id}',[CertificateController::class,'certificaterestore'])->name('certificate.restore');
+Route::get('/certificate/edit/{id}',[CertificateController::class,'certificateedit'])->name('certificate.edit');
+Route::post('/certificate/update/{id}',[CertificateController::class,'certificateupdate'])->name('certificate.update');

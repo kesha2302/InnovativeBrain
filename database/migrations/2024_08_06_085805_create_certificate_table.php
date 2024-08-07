@@ -16,7 +16,7 @@ return new class extends Migration
             $table->bigInteger('Certificate_id')->unique();
             $table->string('Name',255);
             $table->string('Technology',255);
-            $table->string('duration',600);
+            $table->string('Duration',600);
             $table->timestamps();
         });
     }

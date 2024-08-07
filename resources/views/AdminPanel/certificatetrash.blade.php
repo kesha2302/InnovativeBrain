@@ -2,33 +2,25 @@
 
 @section('main-container')
 <div class='mt-3 container'>
-    <h3>Certificate Details</h3>
+    <h3>Certificate Trash</h3>
     <hr>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
 
-            <form class="d-flex" action="">
-                <input class="form-control me-5 mr-sm-2" type="search" value="{{$search}}" name="search"
-                placeholder="Search by name" aria-label="Search" style="width: 500px;">
-                <button class="btn btn-dark">Search</button>
-                <span style="margin-left: 10px;">
-                    <a href="{{url('/Admincertificate')}}">
-                        <button class="btn btn-dark" type="button">Reset</button>
-                    </a>
-                </span>
-            </form>
             <div class="d-flex">
-                <button type="button" onclick="window.location='{{ url('/Admincertificateform') }}'" class="btn btn-dark btn-circle font-rights me-md-2">
-                    <i class="bi bi-plus"></i> Add
-                </button>
-                <a href="{{ url('/Admincertificatetrash') }}">
-                    <button class="btn btn-danger ml-2" >
-                        Trashed Data</button>
+                {{-- <button type="button" onclick="window.location='{{ url('/Adminpackageform') }}'" class="btn btn-dark btn-circle font-rights">
+                    <i class="bi bi-plus"></i>
+                </button> --}}
+                <a href="{{ url('/Admincertificate') }}">
+                    <button class="btn btn-dark ml-2">
+                        View Certificate</button>
                 </a>
             </div>
         </div>
     </nav>
+
+
 
 
     <div class="card mt-2" style="width:60rem;">
@@ -51,20 +43,20 @@
                         @foreach ($certificate as $cd )
                         <tr>
                             <td>{{$cd->Id}}</td>
-                            td>{{$cd->Crtificate_id}}</td>
+                            td>{{$cd->Certificate_id}}</td>
                             <td>{{$cd->Name}}</td>
                             <td>{{$cd->Technology}}</td>
                             <td>{{$cd->Duration}}</td>
                             <td>{{$cd->created_at}}</td>
                             <td>{{$cd->updated_at}}</td>
                             <td>
-                                <a href="{{route('certificate.delete',['id'=>$cd->Id])}}">
-                                <button class="btn btn-danger">Trash</button>
+                                <a href="{{route('certificate.forcedelete',['id'=>$cd->Id])}}">
+                                <button class="btn btn-danger">Delete</button>
                                 </a>
                                 </td>
                                 <td>
-                                <a href="{{route('certificate.edit',['id'=>$cd->Id])}}">
-                                  <button class="btn btn-primary">Update</button>
+                                <a href="{{route('certificate.restore',['id'=>$cd->Id])}}">
+                                  <button class="btn btn-primary">Restore</button>
                                 </a>
                                 </td>
                         </tr>
