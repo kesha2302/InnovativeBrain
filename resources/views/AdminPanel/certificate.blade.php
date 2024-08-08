@@ -51,7 +51,7 @@
                         @foreach ($certificate as $cd )
                         <tr>
                             <td>{{$cd->Id}}</td>
-                            td>{{$cd->Crtificate_id}}</td>
+                            <td>{{$cd->Certificate_id}}</td>
                             <td>{{$cd->Name}}</td>
                             <td>{{$cd->Technology}}</td>
                             <td>{{$cd->Duration}}</td>

@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name',255);
             $table->string('email',255);
             $table->integer('contact');
-            $table->string('document',600);
+            $table->string('resume',600);
             $table->string('message',600);
             $table->timestamps();
         });

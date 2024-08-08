@@ -2,15 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ClientDetail;
 use App\Models\Inquiry;
 use App\Models\InternshipDetail;
+use App\Models\Services;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
     public function adminhome()
     {
-        return view('AdminPanel.index');
+        $totalClient = ClientDetail::count();
+        $totalInterns = InternshipDetail::count();
+        $totalServices = Services::count();
+
+        return view('AdminPanel.index', compact('totalClient','totalInterns','totalServices'));
 
     }
 

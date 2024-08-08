@@ -19,6 +19,8 @@ Route::get('/', [HomeController::class, 'home']);
 Route::get('/service', [HomeController::class, 'Services']);
 Route::get('/about', [HomeController::class, 'about']);
 Route::get('/contact', [HomeController::class, 'contact']);
+Route::post('/contact2', [HomeController::class, 'contact2']);
+
 
 Route::get('/Admin', [AdminController::class, 'adminhome']);
 

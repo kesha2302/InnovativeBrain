@@ -277,7 +277,8 @@ button[type="submit"]:hover {
     </div>
     <div class="form-container">
         <h2 class="tab-title">Internship</h2>
-        <form action="#" method="post" enctype="multipart/form-data">
+        <form action="{{url('/contact2')}}" method="post" enctype="multipart/form-data">
+            @csrf
             <label for="name">Name*</label>
             <input type="text" id="name" name="name" required>
 

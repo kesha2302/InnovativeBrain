@@ -33,7 +33,7 @@
                             <th style="width: 20%;">Email</th>
                             <th style="width: 20%;">Contact</th>
                             <th style="width: 50%;">Message</th>
-                            <th style="width: 20%;">Document</th>
+                            <th style="width: 20%;">Resume</th>
                             <th style="width: 10%;">Upload Time</th>
                             <th style="width: 10%;">Update Time</th>
                         </tr>
@@ -46,7 +46,7 @@
                             <td>{{$intern->email}}</td>
                             <td>{{$intern->contact}}</td>
                             <td>{{$intern->message}}</td>
-                            <td>{{$intern->document}}</td>
+                            <td>{{$intern->resume}}</td>
                             <td>{{$intern->created_at}}</td>
                             <td>{{$intern->updated_at}}</td>
                         </tr>
