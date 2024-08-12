@@ -51,7 +51,7 @@
 
 
 <!-- Back to Top -->
-<a href="#" class="btn btn-lg  btn-lg-square back-to-top" style="color:#2a577c"><i class="bi bi-arrow-up"></i></a>
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
 <!-- JavaScript Libraries -->

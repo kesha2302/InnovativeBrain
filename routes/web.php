@@ -5,6 +5,8 @@ use App\Http\Controllers\AdminSignupLoginController;
 use App\Http\Controllers\CareerController;
 use App\Http\Controllers\CertificateController;
 use App\Http\Controllers\ClientDetailController;
+use App\Http\Controllers\FrontendContactController;
+use App\Http\Controllers\FrontendServiceController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
@@ -20,6 +22,13 @@ Route::get('/service', [HomeController::class, 'Services']);
 Route::get('/about', [HomeController::class, 'about']);
 Route::get('/contact', [HomeController::class, 'contact']);
 Route::post('/contact2', [HomeController::class, 'contact2']);
+
+
+Route::post('/submit2-form', [FrontendServiceController::class, 'submitForm'])->name('submit2.form');
+Route::post('/submit-form', [FrontendContactController::class, 'submitForm'])->name('submit.form');
+Route::get('/career', [HomeController::class, 'career']);
+Route::get('/clients', [HomeController::class, 'clients']);
+Route::post('/clients2', [HomeController::class, 'clients2']);
 
 
 Route::get('/Admin', [AdminController::class, 'adminhome']);

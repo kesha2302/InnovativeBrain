@@ -109,7 +109,7 @@
                     <div class="card mb-3 mt-3 border  shadow-lg rounded" style="max-width: 600px; height:10rem">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="{{ asset('AdminPanel/assets/images/profile/services.png')}}" class="img-fluid rounded ms-5 me-5 mt-5 mb-5" height="50px" width="60px" alt="...">
+                                <img src="{{ asset('AdminPanel/assets/images/profile/certificate.png')}}" class="img-fluid rounded ms-5 me-5 mt-5 mb-5" height="50px" width="60px" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body text-end">

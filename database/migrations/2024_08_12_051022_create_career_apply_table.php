@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('email',100);
             $table->integer('contact');
             $table->string('resume');
+            $table->string('linkedin_url', 255)->nullable();
             $table->timestamps();
         });
     }

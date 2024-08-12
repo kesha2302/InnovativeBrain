@@ -57,8 +57,8 @@
                 <a href="{{url('/service')}}" class="nav-item nav-link">Services</a>
                 <a href="{{url('/about')}}" class="nav-item nav-link">About</a>
                 <a href="{{url('/contact')}}" class="nav-item nav-link">Contact</a>
-                <a href="{{url('')}}" class="nav-item nav-link">Career</a>
-                <a href="contact.html" class="nav-item nav-link">Clients</a>
+                <a href="{{url('/career')}}" class="nav-item nav-link">Career</a>
+                <a href="{{url('/clients')}}" class="nav-item nav-link">Clients</a>
             </div>
              {{-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>

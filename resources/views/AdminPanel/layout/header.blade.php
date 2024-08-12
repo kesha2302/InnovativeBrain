@@ -75,7 +75,15 @@
                   <span>
                     <i class="ti ti-cards"></i>
                   </span>
-                  <span class="hide-menu">Career</span>
+                  <span class="hide-menu">Add Vacancy</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="{{url('/Admincareerapply')}}" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-cards"></i>
+                  </span>
+                  <span class="hide-menu">Career Apply</span>
                 </a>
               </li>
               <li class="sidebar-item">
