@@ -1,14 +1,7 @@
 @extends('frontend.layout.main')
 
 @section('main-container')
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+
 <style>
      .pagelayer-row-holder {
             display: flex;
@@ -226,22 +219,6 @@ button[type="submit"]:hover {
 
 </style>
 <body>
-    <div class="pagelayer-row-holder pagelayer-row pagelayer-auto pagelayer-width-auto">
-        <div class="p-hdr8599 pagelayer-col">
-            <div class="pagelayer-col-holder">
-                <div class="p-aib1329 pagelayer-post_title">
-                    <div class="pagelayer-post-title">Contact us</div>
-                </div>
-                <div class="p-t6u5566 pagelayer-breadcrumb">
-                    <span class="pagelayer-breadcrumb-section">
-                        <a href="https://www.innobraintechnologies.in" rel="nofollow">Home</a>
-                        <b class="pagelayer-breadcrumb-sep">&nbsp;»&nbsp;</b>
-                        <span>Contact</span>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
 <div class="contact-container">
         <div class="contact-item">
             <img src="https://www.pngkey.com/png/full/207-2072722_address-symbol-png-download-date-time-venue-icon.png" alt="Address Icon" class="contact-icon">
@@ -259,17 +236,7 @@ button[type="submit"]:hover {
             <p>inquiry@innobraintechnologies.in</p>
         </div>
     </div>
-    {{-- <div class="header-container">
-        <img src="path/to/logo.png" alt="InnoBrain Technologies" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-        </nav>
-    </div> --}}
+
 </header>
 <div class="content">
     <div class="image-container">
@@ -277,7 +244,8 @@ button[type="submit"]:hover {
     </div>
     <div class="form-container">
         <h2 class="tab-title">Internship</h2>
-        <form action="#" method="post" enctype="multipart/form-data">
+        <form action="{{ url('/contact2') }}" method="post" enctype="multipart/form-data">
+            @csrf
             <label for="name">Name*</label>
             <input type="text" id="name" name="name" required>
 
@@ -298,5 +266,5 @@ button[type="submit"]:hover {
     </div>
 </div>
 </body>
-</html>
+
 @endsection

@@ -14,8 +14,8 @@ class FrontendServiceController extends Controller
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
-            'contact' => 'required|string|max:15',
-            'interest' => 'required|string'
+            'contact' => 'required|string|max:10',
+            'interested_in' => 'required|string'
         ]);
 
         // Check validation
@@ -28,10 +28,12 @@ class FrontendServiceController extends Controller
             'name' => $request->input('name'),
             'email' => $request->input('email'),
             'contact' => $request->input('contact'),
-            'interested_in' => $request->input('interest')
+            'interested_in' => $request->input('interested_in')
         ]);
 
+        // return redirect()->route('Services')->with('success', 'Inquiry submitted successfully!');
+    // }
         // Redirect to a success page
-        return redirect()->route('form.success');
+        return redirect('/service');
     }
 }

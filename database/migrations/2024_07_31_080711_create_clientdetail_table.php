@@ -9,14 +9,13 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up()
+    public function up(): void
     {
-        Schema::create('inquiry', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('email');
-            $table->string('contact');
-            $table->string('interested_in');
+        Schema::create('clientdetail', function (Blueprint $table) {
+            $table->id('client_id');
+            $table->string('name',255);
+            $table->string('description',600);
+            $table->string('Image',255);
             $table->timestamps();
         });
     }
@@ -26,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('inquiry');
+        Schema::dropIfExists('clientdetail');
     }
 };

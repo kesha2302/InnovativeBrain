@@ -1,0 +1,463 @@
+{{-- @extends('frontend.layout.main')
+
+@section('main-container')
+<style>
+    .pagelayer-row-holder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .pagelayer-col {
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            background-color: #004a7c;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 40px;
+        }
+
+        .pagelayer-col-holder {
+            text-align: center;
+        }
+        .p-aib1329 .pagelayer-post-title {
+            color: #ffffff;
+            font-size: 50px;
+            font-weight: 700;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) and (min-width: 501px) {
+            .p-aib1329 .pagelayer-post-title {
+                font-size: 42px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .p-aib1329 .pagelayer-post-title {
+                font-size: 34px;
+            }
+        }
+
+        /* Breadcrumb Styles */
+        .p-t6u5566 .pagelayer-breadcrumb-section a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .p-t6u5566 .pagelayer-breadcrumb-section a:hover {
+            color: #a8c8f4;
+            text-decoration: underline;
+        }
+
+        .p-t6u5566 .pagelayer-breadcrumb-section {
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .p-t6u5566 .pagelayer-breadcrumb-sep {
+            color: #ffffff;
+        }
+</style>
+<div class="pagelayer-row-holder pagelayer-row pagelayer-auto pagelayer-width-auto">
+    <div class="p-hdr8599 pagelayer-col">
+        <div class="pagelayer-col-holder">
+            <div class="p-aib1329 pagelayer-post_title">
+                <div class="pagelayer-post-title">Career</div>
+            </div>
+            <div class="p-t6u5566 pagelayer-breadcrumb">
+                <span class="pagelayer-breadcrumb-section">
+                    <a href="https://www.innobraintechnologies.in" rel="nofollow">Home</a>
+                    <b class="pagelayer-breadcrumb-sep">&nbsp;»&nbsp;</b>
+                    <span>Career</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<form class="d-flex" action="">
+    <input class="form-control me-5 mr-sm-2" type="search" value="{{$search}}" name="search"
+    placeholder="Search by name" aria-label="Search" style="width: 500px;">
+    <button class="btn btn-dark">Search</button>
+    <span style="margin-left: 10px;">
+        <a href="{{url('/career')}}">
+            <button class="btn btn-dark" type="button">Reset</button>
+        </a>
+    </span>
+</form>
+
+<div class="card mt-2" style="width:60rem;">
+    <div class="card-body">
+        <div class="table-responsive text-center">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th style="width: 10%;">No.</th>
+                        <th style="width: 15%;">Certificate Id</th>
+                        <th style="width: 15%;">Name</th>
+                        <th style="width: 20%;">Technology</th>
+                        <th style="width: 20%;">Duration</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($certificate as $cd )
+                    <tr>
+                        <td>{{$cd->Id}}</td>
+                        <td>{{$cd->Certificate_id}}</td>
+                        <td>{{$cd->Name}}</td>
+                        <td>{{$cd->Technology}}</td>
+                        <td>{{$cd->Duration}}</td>
+
+
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@endsection --}}
+@extends('frontend.layout.main')
+
+@section('main-container')
+<style>
+    .pagelayer-row-holder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .pagelayer-col {
+        width: 100%;
+        max-width: 1200px;
+        padding: 20px;
+        background-color: #004a7c;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        margin-bottom: 40px;
+    }
+
+    .pagelayer-col-holder {
+        text-align: center;
+    }
+    .p-aib1329 .pagelayer-post-title {
+        color: #ffffff;
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 768px) and (min-width: 501px) {
+        .p-aib1329 .pagelayer-post-title {
+            font-size: 42px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .p-aib1329 .pagelayer-post-title {
+            font-size: 34px;
+        }
+    }
+
+    /* Breadcrumb Styles */
+    .p-t6u5566 .pagelayer-breadcrumb-section a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .p-t6u5566 .pagelayer-breadcrumb-section a:hover {
+        color: #a8c8f4;
+        text-decoration: underline;
+    }
+
+    .p-t6u5566 .pagelayer-breadcrumb-section {
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+
+    .p-t6u5566 .pagelayer-breadcrumb-sep {
+        color: #ffffff;
+    }
+    .search-section {
+        text-align: center;
+        margin: 40px 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .search-section h2 {
+        color: #004a7c;
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .search-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search-form input[type="search"] {
+        width: 60%;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: 2px solid #004a7c;
+        border-radius: 50px;
+        margin-right: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .search-form input[type="search"]:focus {
+        border-color: #a8c8f4;
+        outline: none;
+        box-shadow: 0 0 10px rgba(0, 74, 124, 0.2);
+    }
+
+    .search-form button {
+        background-color: #004a7c;
+        color: #ffffff;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 600;
+        border: none;
+        border-radius: 50px;
+        transition: background-color 0.3s ease;
+    }
+
+    .search-form button:hover {
+        background-color: #002f4a;
+    }
+
+    .reset-button {
+        margin-left: 10px;
+    }
+
+    .reset-button a button {
+        background-color: #ff4a4a;
+        color: #ffffff;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 600;
+        border: none;
+        border-radius: 50px;
+        transition: background-color 0.3s ease;
+    }
+
+    .reset-button a button:hover {
+        background-color: #cc3a3a;
+    }
+    .card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+
+    .card-body {
+        padding: 0;
+    }
+
+    .table-responsive {
+        border-radius: 12px;
+        overflow: hidden;
+        margin: 20px 0;
+    }
+
+    .table {
+        width: 100%;
+        margin-bottom: 0;
+        background-color: #ffffff;
+    }
+
+    .table thead th {
+        background-color: #004a7c;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+        padding: 15px;
+        border: none;
+    }
+
+    .table tbody tr {
+        transition: background-color 0.3s ease;
+    }
+
+    .table tbody tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    .table tbody td {
+        text-align: center;
+        padding: 15px;
+        border: none;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .table tbody td:first-child {
+        border-radius: 12px 0 0 12px;
+    }
+
+    .table tbody td:last-child {
+        border-radius: 0 12px 12px 0;
+    }
+
+    @media (max-width: 768px) {
+        .table-responsive {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .table thead {
+            display: none;
+        }
+
+        .table tbody tr {
+            display: block;
+            margin-bottom: 10px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .table tbody td {
+            display: block;
+            text-align: right;
+            font-size: 14px;
+            border-bottom: 1px solid #e9e9e9;
+        }
+
+        .table tbody td:last-child {
+            border-bottom: 0;
+        }
+
+        .table tbody td:before {
+            content: attr(data-label);
+            float: left;
+            font-weight: bold;
+            color: #004a7c;
+        }
+    }
+    h2 {
+        color: #004a7c;
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+</style>
+
+<div class="pagelayer-row-holder pagelayer-row pagelayer-auto pagelayer-width-auto">
+    <div class="p-hdr8599 pagelayer-col">
+        <div class="pagelayer-col-holder">
+            <div class="p-aib1329 pagelayer-post_title">
+                <div class="pagelayer-post-title">Career</div>
+            </div>
+            <div class="p-t6u5566 pagelayer-breadcrumb">
+                <span class="pagelayer-breadcrumb-section">
+                    <a href="https://www.innobraintechnologies.in" rel="nofollow">Home</a>
+                    <b class="pagelayer-breadcrumb-sep">&nbsp;»&nbsp;</b>
+                    <span>Career</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="search-section">
+    <h2>Search Your Certificate Here</h2>
+    <form class="search-form" action="">
+        <input class="form-control" type="search" value="{{$search}}" name="search" placeholder="Search by name" aria-label="Search">
+        <button class="btn">Search</button>
+        <span class="reset-button">
+            <a href="{{url('/career')}}">
+                <button class="btn" type="button">Reset</button>
+            </a>
+        </span>
+    </form>
+</div>
+
+@if($certificate->isNotEmpty())
+<div class="card mt-2" style="width: 100%;">
+    <div class="card-body">
+        <div class="table-responsive text-center">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th style="width: 10%;">No.</th>
+                            <th style="width: 15%;">Certificate Id</th>
+                            <th style="width: 15%;">Name</th>
+                            <th style="width: 20%;">Technology</th>
+                            <th style="width: 20%;">Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($certificate as $cd)
+                        <tr>
+                            <td>{{$cd->Id}}</td>
+                            <td>{{$cd->Certificate_id}}</td>
+                            <td>{{$cd->Name}}</td>
+                            <td>{{$cd->Technology}}</td>
+                            <td>{{$cd->Duration}}</td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+@endif
+ <h2>Vacancy</h2>
+ <div class="card mt-2" style="width: 100%;">
+    <div class="card-body">
+        <div class="table-responsive text-center">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th style="width: 10%;">Post</th>
+                            <th style="width: 15%;">Experience</th>
+                            <th style="width: 15%;">Skills</th>
+                            <th style="width: 20%;">Description</th>
+                            <th style="width: 20%;">Type of Job</th>
+                            <th style="width: 20%;">Last Date</th>
+                            <th style="width: 20%;">Responsibility</th>
+
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        @foreach ($vacancy as $v)
+                        <tr>
+                            <td>{{$v->post_for}}</td>
+                            <td>{{$v->experience}}</td>
+                            <td>{{$v->skills_req}}</td>
+                            <td>{{$v->description}}</td>
+                            <td>{{$v->type_of_job}}</td>
+                            <td>{{$v->last_date}}</td>
+                            <td>{{$v->responsibility}}</td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+@endsection

@@ -15,4 +15,7 @@ class Inquiry extends Model
         'contact',
         'interested_in',
     ];
+
+    protected $table= "inquiry";
+    protected $primaryKey = "inquiry_id";
 }

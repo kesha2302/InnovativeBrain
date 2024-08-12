@@ -574,9 +574,24 @@ button.small {
         <h3 class="section-title bg-white text-center px-3" style="font-size: 30px; color: #00008b;">Inquiry Form</h3>
     </div>
     <div class="form-container">
+        @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+        @endif
+
+        @if (session('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+        @endif
         <form action="{{ route('submit.form') }}" method="POST">
             @csrf
-            <h2>Inquiry Form</h2>
+
             <label for="name">Your Name *</label>
             <input type="text" id="name" name="name" required>
 
@@ -587,7 +602,7 @@ button.small {
             <input type="tel" id="contact" name="contact" required>
 
             <label for="interest">Interested in ?</label>
-            <select id="interest" name="interest">
+            <select id="interest" name="interested_in">
                 <option value="IT Solutions">IT Solutions</option>
                 <option value="Internship">Internship</option>
                 <option value="IT Training">IT Training</option>
