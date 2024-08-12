@@ -34,3 +34,4 @@ Route::get('/form.success', function () {
     return view('form.success');
 })->name('form.success');
 
+Route::get('/hiring', [HomeController::class, 'hiring']);

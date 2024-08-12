@@ -157,9 +157,7 @@
             <div class="col-md-4">
                 <div class="card mb-4">
                     <img src="{{ asset('clientlogo/' . $client->Image) }}" class="card-img-top" alt="{{ $client->name }}">
-                    {{-- <img  src="frontend/img/i.jpg" alt="" style="object-fit: cover;"> --}}
-                    {{-- <img src="{{ asset('clientlogo/' . $client->Image) }}" class="card-img-top" alt="{{ $client->name }}"> --}}
-                    <div class="card-body">
+                 <div class="card-body">
                         <h5 class="card-title">{{ $client->name }}</h5>
                         <p class="card-text">{{ $client->description }}</p>
                     </div>
@@ -168,4 +166,22 @@
         @endforeach
     </div>
 </div>
+<div class="container">
+    <div class="row">
+        @foreach($clientDetails as $client)
+            <div class="col-md-6 mb-4">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <img src="{{ asset('clientlogo/' . $client->Image) }}" class="img-fluid" alt="{{ $client->name }}">
+                    </div>
+                    <div class="col-md-8">
+                        <h5 class="card-title">{{ $client->name }}</h5>
+                        <p class="card-text">{{ $client->description }}</p>
+                    </div>
+                </div>
+            </div>
+        @endforeach
+    </div>
+</div>
+
 @endsection

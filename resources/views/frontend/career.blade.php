@@ -360,6 +360,10 @@
         letter-spacing: 1px;
         text-align: center;
     }
+
+
+
+
 </style>
 
 <div class="pagelayer-row-holder pagelayer-row pagelayer-auto pagelayer-width-auto">
@@ -421,8 +425,35 @@
         </div>
     </div>
 @endif
- <h2>Vacancy</h2>
- <div class="card mt-2" style="width: 100%;">
+<div class="container" style="display: flex; align-items: center; justify-content: space-between; padding: 50px; background-color: white; max-width: 1200px; margin: 0 auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 8px;">
+    <div class="text-section" style="flex: 1; padding-right: 20px;">
+        <h1 style="font-size: 48px; margin: 0; color: #333;">
+            <span class="highlight" style="color: #1b47da;">Careers</span><br>at InnoBrain
+        </h1>
+        <p style="font-size: 18px; color: #666; margin-top: 20px; line-height: 1.6;">
+            We provide an opportunity to solve difficult problems creatively, and the infrastructure to ensure you are constantly developing.
+        </p>
+    </div>
+    <div class="image-section" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+        <img src="https://img.freepik.com/premium-vector/flat-career-people-concept-design-team-work-concept_123447-3946.jpg?w=740" alt="Team meeting" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; object-fit: cover; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    </div>
+</div>
+
+<div style="background: linear-gradient(135deg, #1e3a8a, #002f4a); padding: 60px 20px; text-align: center; color: white; border-radius: 10px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+    <h2 style="font-size: 14px; font-weight: bold; color: #e0e0e0; margin: 0 0 10px; letter-spacing: 2px; text-transform: uppercase; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);">Join Us</h2>
+    <h1 style="font-size: 48px; font-weight: bold; color: white; margin: 0 0 20px; text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);">We are Hiring!</h1>
+    <p style="font-size: 18px; line-height: 1.8; margin: 0 0 30px; max-width: 800px; margin-left: auto; margin-right: auto;">
+        Are you passionate about technology and want to work in high-performing teams? Join us! We work with multi-billion dollar Fortune 500 customers on cutting-edge technologies who demand nothing less than excellence from us. We are committed to building a workplace that fosters inclusivity along with productivity. We offer highly competitive benefits and compensation to our employees.
+    </p>
+    <a href="" style="background-color: #c9c0c3; color: white; padding: 15px 30px; font-size: 16px; text-decoration: none; border-radius: 30px; font-weight: bold; display: inline-block; transition: background-color 0.3s ease, transform 0.3s ease; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);"
+       onmouseover="this.style.backgroundColor='#ff4081'; this.style.transform='scale(1.05)';"
+       onmouseout="this.style.backgroundColor='#c9c0c3'; this.style.transform='scale(1)';">
+        View Open Positions
+    </a>
+</div>
+
+
+ {{-- <div class="card mt-2" style="width: 100%;">
     <div class="card-body">
         <div class="table-responsive text-center">
                 <table class="table">
@@ -457,7 +488,7 @@
         </div>
     </div>
 
-
+ --}}
 
 
 @endsection

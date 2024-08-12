@@ -100,6 +100,9 @@ class HomeController extends Controller
     return view('frontend.career')->with($data);
 }
 
-
+public function hiring()
+    {
+        return view('frontend.hiring');
+    }
 }
 
