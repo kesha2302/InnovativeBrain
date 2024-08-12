@@ -1,6 +1,7 @@
 /********** Template CSS **********/
 :root {
-    --primary: #0609cc;
+    --primary: #004a7c;
+    /* --primary: #0609cc; */
     --light: #F0FBFC;
     --dark: #181d38;
 }
@@ -462,7 +463,7 @@
 }
 .p-zdd5470 .pagelayer-divider-seperator {
     border-top-style: solid;
-    border-top-color: #3700ff;
+    border-top-color: #004a7c;
     border-top-width: 1px;
     width: 22%;
 }
@@ -472,7 +473,7 @@
     text-align: left;
 }
 .p-7qm3437 .pagelayer-progress-bar, .p-qza8928 .pagelayer-progress-bar, .p-boa719 .pagelayer-progress-bar {
-    background-color: #4446e4;
+    background-color: #004a7c;
     height: 14px;
 }
 .p-7qm3437 .pagelayer-progress-percent, .p-qza8928 .pagelayer-progress-percent, .p-boa719 .pagelayer-progress-percent {

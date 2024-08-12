@@ -46,7 +46,17 @@
                             <td>{{$intern->email}}</td>
                             <td>{{$intern->contact}}</td>
                             <td>{{$intern->message}}</td>
-                            <td>{{$intern->resume}}</td>
+                            {{-- <td>{{$intern->resume}}</td> --}}
+                            <td>
+                                @if($intern->resume)
+                                    <a href="{{ url('Resumes/' . $intern->resume) }}" download="{{ $intern->resume }}">
+                                        <button class="btn btn-sm btn-primary">Download</button>
+                                    </a>
+                                @else
+                                    No Resume
+                                @endif
+                            </td>
+
                             <td>{{$intern->created_at}}</td>
                             <td>{{$intern->updated_at}}</td>
                         </tr>

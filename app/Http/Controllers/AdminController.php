@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Certificate;
 use App\Models\ClientDetail;
 use App\Models\Inquiry;
 use App\Models\InternshipDetail;
@@ -15,8 +16,9 @@ class AdminController extends Controller
         $totalClient = ClientDetail::count();
         $totalInterns = InternshipDetail::count();
         $totalServices = Services::count();
+        $Certificate = Certificate::count();
 
-        return view('AdminPanel.index', compact('totalClient','totalInterns','totalServices'));
+        return view('AdminPanel.index', compact('totalClient','totalInterns','totalServices','Certificate'));
 
     }
 
