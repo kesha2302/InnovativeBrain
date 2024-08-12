@@ -27,6 +27,11 @@ Route::post('/contact2', [HomeController::class, 'contact2']);
 Route::post('/submit2-form', [FrontendServiceController::class, 'submitForm'])->name('submit2.form');
 Route::post('/submit-form', [FrontendContactController::class, 'submitForm'])->name('submit.form');
 Route::get('/career', [HomeController::class, 'career']);
+
+Route::get('/hiring', [HomeController::class, 'hiring']);
+Route::get('/vacancy/{id}', [HomeController::class, 'show'])->name('vacancy.show');
+Route::post('/applyvacancyform', [HomeController::class, 'applycareerformdata']);
+
 Route::get('/clients', [HomeController::class, 'clients']);
 Route::post('/clients2', [HomeController::class, 'clients2']);
 
@@ -60,7 +65,7 @@ Route::get('/Admininquiry',[AdminController::class,'admininquiry']);
 //Admin Intern Details
 Route::get('/Adminintern',[AdminController::class,'adminintern']);
 
-//Admin Career
+//Admin Career(Add Vacancy)
 Route::get('/Admincareer',[CareerController::class,'admincareerview']);
 Route::get('/Admincareerform',[CareerController::class,'admincareerform']);
 Route::post('/Admincareerform2', [CareerController::class, 'careerdata']);
@@ -70,6 +75,9 @@ Route::get('/career/frocedelete/{id}',[CareerController::class,'careerforcedelet
 Route::get('/career/restore/{id}',[CareerController::class,'careerrestore'])->name('career.restore');
 Route::get('/career/edit/{id}',[CareerController::class,'careeredit'])->name('career.edit');
 Route::post('/career/update/{id}',[CareerController::class,'careerupdate'])->name('career.update');
+
+//Admin Career Apply(Vcanacy apply details)
+Route::get('/Admincareerapply',[AdminController::class,'admincareerapplyview']);
 
 // Admin Client Details
 Route::get('/Adminclientdetail',[ClientDetailController::class,'adminclientdetailview']);

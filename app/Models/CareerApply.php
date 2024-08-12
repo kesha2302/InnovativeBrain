@@ -9,6 +9,11 @@ class CareerApply extends Model
 {
     use HasFactory;
 
-    protected $tabel = 'career_apply';
+    protected $table = 'career_apply';
     protected $primaryKey = 'careerapply_id';
+
+    public function vacancy()
+{
+    return $this->belongsTo(AddVacancy::class, 'vacancy_id');
+}
 }

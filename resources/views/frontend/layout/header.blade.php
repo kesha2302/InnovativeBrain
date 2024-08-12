@@ -9,7 +9,7 @@
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
-    <link href="{{asset('frontend/img/logo2.png')}}" rel="icon">
+    <link href="{{asset('frontend/img/favicon2.png')}}" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,14 +21,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="{{('frontend/lib/animate/animate.min.css')}}" rel="stylesheet">
-    <link href="{{('frontend/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+    <link href="{{asset('frontend/lib/animate/animate.min.css')}}" rel="stylesheet">
+    <link href="{{asset('frontend/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{('frontend/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('frontend/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="{{('frontend/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('frontend/css/style.css')}}" rel="stylesheet">
 </head>
 
 <body>
@@ -45,7 +45,7 @@
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             {{-- <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2> --}}
-            <img src="./frontend/img/innobrain.png" alt="">
+            <img src="{{asset('frontend/img/innobrain.png')}}" alt="">
         </a>
 
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">

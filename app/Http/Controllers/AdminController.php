@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CareerApply;
 use App\Models\Certificate;
 use App\Models\ClientDetail;
 use App\Models\Inquiry;
@@ -51,6 +52,22 @@ class AdminController extends Controller
 
         return view('AdminPanel.interndetail')->with($data);
     }
+
+    public function admincareerapplyview()
+    {
+        $search=$request['search']??"";
+        if($search!=""){
+            $careerapply=CareerApply::where('name',"LIKE","%$search%")->with('vacancy')->get();
+        }
+        else{
+            $careerapply=CareerApply::all();
+        }
+
+        $data=compact('careerapply', 'search');
+
+        return view('AdminPanel.careerapply')->with($data);
+    }
+
 
 
 }
