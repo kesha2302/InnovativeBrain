@@ -62,17 +62,7 @@
         .p-t6u5566 .pagelayer-breadcrumb-sep {
             color: #ffffff;
         }
-/*
-.contact-container {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f9f9f9;
-} */
+
 
 .contact-container {
     display: flex;
@@ -243,7 +233,7 @@ button[type="submit"]:hover {
         <img src="https://iatp.iusd.org/sites/iatp/files/images/pages/squareimages/student-internship.jpg" alt="Office Image">
     </div>
     <div class="form-container">
-        <h2 class="tab-title">Internship</h2>
+        <h2 class="tab-title" style="background-color: #004a7c">Internship</h2>
         <form action="{{ url('/contact2') }}" method="post" enctype="multipart/form-data">
             @csrf
             <label for="name">Name*</label>
@@ -261,7 +251,7 @@ button[type="submit"]:hover {
             <label for="message">Message</label>
             <textarea id="message" name="message"></textarea>
 
-            <button type="submit">Submit</button>
+            <button type="submit" style="background-color: #004a7c">Submit</button>
         </form>
     </div>
 </div>

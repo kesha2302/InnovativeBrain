@@ -46,8 +46,8 @@
                             <th style="width: 10%;">Type of Job</th>
                             <th style="width: 10%;">Last Date</th>
                             <th style="width: 40%;">Responsibility</th>
-                            <th style="width: 10%;">Created_at</th>
-                            <th style="width: 10%;">Updated_at</th>
+                            <th style="width: 10%;">Created At</th>
+                            <th style="width: 10%;">Updated At</th>
                             <th colspan="2">Action</th>
                         </tr>
                     </thead>

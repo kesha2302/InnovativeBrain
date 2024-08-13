@@ -19,14 +19,15 @@
     <a href="#" style="color: #6b7280; text-decoration: none;">Open Positions</a>
 </div>
 
-<div class="card text-center">
-    <div class="card-body">
+
+<div class="card text-center" style="border: 1px solid #002f4a; border-radius: 10px; box-shadow: 0 4px 8px #002f4a; background-color: #f9f9f9; padding: 15px;">
+    <div class="card-body" style="padding: 20px;">
         @if($vacancy->isEmpty())
-            <p>No Vacancy Available</p>
+            <p style="color: #ff0000; font-size: 18px; font-weight: bold; font-family: Arial, sans-serif;">No Vacancy Available</p>
         @else
         @foreach($vacancy as $vacancy)
-        <div class="mb-2">
-            <a href="{{ route('vacancy.show', $vacancy->vacancy_id) }}">
+        <div class="mb-2" style="margin-bottom: 10px; background-color: #e0f7fa; border-radius: 5px; padding: 10px;">
+            <a href="{{ route('vacancy.show', $vacancy->vacancy_id) }}" style="text-decoration: none; color: #002f4a; font-size: 20px; font-weight: bold; display: block; transition: background-color 0.3s, color 0.3s;">
                 {{$vacancy->post_for}}
             </a>
         </div>
@@ -34,5 +35,6 @@
         @endif
     </div>
 </div>
+
 
 @endsection

@@ -49,7 +49,7 @@
               <li class="sidebar-item">
                 <a class="sidebar-link" href="{{url('/Adminservices')}}" aria-expanded="false">
                   <span>
-                    <i class="ti ti-article"></i>
+                    <i class="ti ti-settings"></i>
                   </span>
                   <span class="hide-menu">Services</span>
                 </a>
@@ -57,7 +57,7 @@
               <li class="sidebar-item">
                 <a class="sidebar-link" href="{{url('/Admininquiry')}}" aria-expanded="false">
                   <span>
-                    <i class="ti ti-file-description"></i>
+                    <i class="ti ti-message"></i>
                   </span>
                   <span class="hide-menu">Inquiry Details</span>
                 </a>
@@ -65,7 +65,7 @@
               <li class="sidebar-item">
                 <a class="sidebar-link" href="{{url('/Adminintern')}}" aria-expanded="false">
                   <span>
-                    <i class="ti ti-file-description"></i>
+                    <i class="ti ti-message"></i>
                   </span>
                   <span class="hide-menu">Intern Details</span>
                 </a>
@@ -73,7 +73,7 @@
               <li class="sidebar-item">
                 <a class="sidebar-link" href="{{url('/Admincareer')}}" aria-expanded="false">
                   <span>
-                    <i class="ti ti-cards"></i>
+                    <i class="ti ti-briefcase"></i>
                   </span>
                   <span class="hide-menu">Add Vacancy</span>
                 </a>
@@ -81,7 +81,7 @@
               <li class="sidebar-item">
                 <a class="sidebar-link" href="{{url('/Admincareerapply')}}" aria-expanded="false">
                   <span>
-                    <i class="ti ti-cards"></i>
+                    <i class="ti ti-briefcase"></i>
                   </span>
                   <span class="hide-menu">Career Apply</span>
                 </a>
@@ -89,7 +89,7 @@
               <li class="sidebar-item">
                 <a class="sidebar-link" href="{{url('/Adminclientdetail')}}" aria-expanded="false">
                   <span>
-                    <i class="ti ti-file-description"></i>
+                    <i class="ti ti-message"></i>
                   </span>
                   <span class="hide-menu">Client Details</span>
                 </a>
@@ -97,7 +97,7 @@
               <li class="sidebar-item">
                 <a class="sidebar-link" href="{{url('/Admincertificate')}}" aria-expanded="false">
                   <span>
-                    <i class="ti ti-file-description"></i>
+                    <i class="ti ti-certificate"></i>
                   </span>
                   <span class="hide-menu">Certificate</span>
                 </a>

@@ -46,7 +46,7 @@
                             <td>{{$intern->email}}</td>
                             <td>{{$intern->contact}}</td>
                             <td>{{$intern->message}}</td>
-                            {{-- <td>{{$intern->resume}}</td> --}}
+
                             <td>
                                 @if($intern->resume)
                                     <a href="{{ url('Resumes/' . $intern->resume) }}" download="{{ $intern->resume }}">

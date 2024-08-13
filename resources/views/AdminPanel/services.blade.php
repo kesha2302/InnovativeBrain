@@ -42,8 +42,8 @@
                             <th style="width: 15%;">Service Id</th>
                             <th style="width: 15%;">Title</th>
                             <th style="width: 60%;">Description</th>
-                            <th style="width: 10%;">Created_at</th>
-                            <th style="width: 10%;">Updated_at</th>
+                            <th style="width: 10%;">Created At</th>
+                            <th style="width: 10%;">Updated At</th>
                             <th colspan="2">Action</th>
                         </tr>
                     </thead>

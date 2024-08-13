@@ -2,16 +2,14 @@
 
 @section('main-container')
 <div class='mt-3 container'>
-    <h3>Career Vacancy Trash</h3>
+    <h3>Trash Career Vacancy</h3>
     <hr>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
 
             <div class="d-flex">
-                {{-- <button type="button" onclick="window.location='{{ url('/Adminpackageform') }}'" class="btn btn-dark btn-circle font-rights">
-                    <i class="bi bi-plus"></i>
-                </button> --}}
+
                 <a href="{{ url('/Admincareer') }}">
                     <button class="btn btn-dark ml-2">
                         View Career Vacancy</button>
@@ -38,8 +36,8 @@
                             <th style="width: 10%;">Type of Job</th>
                             <th style="width: 10%;">Last Date</th>
                             <th style="width: 30%;">Responsibility</th>
-                            <th style="width: 10%;">Created_at</th>
-                            <th style="width: 10%;">Updated_at</th>
+                            <th style="width: 10%;">Created At</th>
+                            <th style="width: 10%;">Updated At</th>
                             <th colspan="2">Action</th>
                         </tr>
                     </thead>

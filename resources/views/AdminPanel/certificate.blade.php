@@ -42,8 +42,8 @@
                             <th style="width: 15%;">Name</th>
                             <th style="width: 20%;">Technology</th>
                             <th style="width: 20%;">Duration</th>
-                            <th style="width: 10%;">Created_at</th>
-                            <th style="width: 10%;">Updated_at</th>
+                            <th style="width: 10%;">Created At</th>
+                            <th style="width: 10%;">Updated At</th>
                             <th colspan="2">Action</th>
                         </tr>
                     </thead>

@@ -303,7 +303,7 @@
 <div class="container" style="display: flex; align-items: center; justify-content: space-between; padding: 50px; background-color: white; max-width: 1200px; margin: 0 auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 8px;">
     <div class="text-section" style="flex: 1; padding-right: 20px;">
         <h1 style="font-size: 48px; margin: 0; color: #333;">
-            <span class="highlight" style="color: #1b47da;">Careers</span><br>at InnoBrain
+            <span class="highlight" style="color: #004a7c">Careers</span><br>at InnoBrain
         </h1>
         <p style="font-size: 18px; color: #666; margin-top: 20px; line-height: 1.6;">
             We provide an opportunity to solve difficult problems creatively, and the infrastructure to ensure you are constantly developing.

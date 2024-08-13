@@ -21,7 +21,7 @@
             <div class="card mb-0">
               <div class="card-body">
                 <a href="" class="text-nowrap logo-img text-center d-block py-3 w-100">
-                  <img src="{{ asset('AdminPanel/assets/images/logos/favicon2.png')}}" width="180" height="100" alt="">
+                  <img src="{{ asset('AdminPanel/assets/images/logos/favicon2.png')}}" width="150" height="100" alt="">
                 </a>
 
                 <form action="{{url('/Adminregister2')}}" method="POST">
@@ -47,7 +47,7 @@
                     <div class="text-danger">{{ $message }}</div>
                   @enderror
                   </div>
-                  {{-- <a href="./index.html" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2">Sign Up</a> --}}
+
                   <button class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2" type="submit">Sign Up</button>
                   <div class="d-flex align-items-center justify-content-center">
                     <p class="fs-4 mb-0 fw-bold">Already have an Account?</p>

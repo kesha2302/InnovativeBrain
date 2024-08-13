@@ -19,7 +19,7 @@
             <div class="card mb-0">
               <div class="card-body">
                 <a href=" " class="text-nowrap logo-img text-center d-block py-3 w-100">
-                  <img src="{{ asset('AdminPanel/assets/images/logos/favicon2.png') }}" width="180" height="100" alt="">
+                  <img src="{{ asset('AdminPanel/assets/images/logos/favicon2.png') }}" width="150" height="100" alt="">
                 </a>
 
                 <form action="{{ url('/Adminlogin2') }}" method="POST">

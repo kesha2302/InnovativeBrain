@@ -14,16 +14,14 @@
                                 A Better Place With Skill</h2
                                 >
                             <h2 class="display-8 text-white animated slideInDown">The Future Belongs To Those Who Learn More Skills And Combine Them In Creative Ways</h2>
-                            {{-- <p class="fs-5 text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p> --}}
-                            {{-- <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a> --}}
-                            {{-- <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a> --}}
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="owl-carousel-item position-relative">
-            {{-- <img class="img-fluid" src="frontend/img/cat-2.jpg" alt=""> --}}
+
             <img class="img-fluid" src="https://img.freepik.com/free-photo/workers-it-company-working-computer_1303-19428.jpg?w=740&t=st=1722486649~exp=1722487249~hmac=bb8bedeb66791b3d483d007c612da63fa8358dc6516855da45cc5d214092bd07" alt="">
             <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
                 <div class="container">
@@ -32,8 +30,7 @@
                             <h1 class="text-primary text-uppercase mb-3 animated slideInDown">Internship</h1>
                             <h3 class="display-7 text-white animated slideInDown">We provide internship opportunities on different IT domains.</h3>
                             <p class="fs-5 text-white mb-4 pb-2">Get Educated Online From Your Home</p>
-                            {{-- <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a> --}}
-                            {{-- <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a> --}}
+
                         </div>
                     </div>
 
@@ -50,9 +47,7 @@
                                 IT Training</h2
                                 >
                             <h2 class="display-8 text-white animated slideInDown">We also offer various types of basic to advanced IT trainings.</h2>
-                            {{-- <p class="fs-5 text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p> --}}
-                            {{-- <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a> --}}
-                            {{-- <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a> --}}
+
                         </div>
                     </div>
                 </div>
@@ -68,9 +63,7 @@
                                  Project Development</h2
                                 >
                             <h2 class="display-8 text-white animated slideInDown">We also offer various types of basic to advanced IT trainings.</h2>
-                            {{-- <p class="fs-5 text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p> --}}
-                            {{-- <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a> --}}
-                            {{-- <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a> --}}
+
                         </div>
                     </div>
                 </div>
@@ -200,22 +193,22 @@
                 <p class="mb-4"> We also provide Internship Opportunities with the aim to bridge the gap between Industry and Academia.</p>
                 <div class="row gy-2 gx-4 mb-4">
                     <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
+                        <p class="mb-0"><i class="fa fa-arrow-right  me-2" style="color: #004a7c"></i>Skilled Instructors</p>
                     </div>
                     <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online Classes</p>
+                        <p class="mb-0"><i class="fa fa-arrow-right  me-2" style="color: #004a7c"></i>Online Classes</p>
                     </div>
                     <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>International Certificate</p>
+                        <p class="mb-0"><i class="fa fa-arrow-right  me-2" style="color: #004a7c"></i>International Certificate</p>
                     </div>
                     <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
+                        <p class="mb-0"><i class="fa fa-arrow-right  me-2" style="color: #004a7c"></i>Skilled Instructors</p>
                     </div>
                     <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online Classes</p>
+                        <p class="mb-0"><i class="fa fa-arrow-right  me-2" style="color: #004a7c"></i>Online Classes</p>
                     </div>
                     <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>International Certificate</p>
+                        <p class="mb-0"><i class="fa fa-arrow-right me-2" style="color: #004a7c"></i>International Certificate</p>
                     </div>
                 </div>
 

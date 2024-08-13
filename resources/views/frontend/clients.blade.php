@@ -61,79 +61,7 @@
         .p-t6u5566 .pagelayer-breadcrumb-sep {
             color: #ffffff;
         }
-        .card {
-        border: none;
-        border-radius: 15px;
-        overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s, box-shadow 0.3s;
-    }
 
-    .card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-
-    .card img {
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        object-fit: cover;
-        height: 200px;
-        width: 100%;
-    }
-
-    .card-body {
-        padding: 20px;
-        background-color: #f7f9fc;
-    }
-
-    .card-title {
-        font-size: 1.5rem;
-        font-weight: 600;
-        margin-bottom: 10px;
-        color: #004a7c;
-        text-align: center;
-    }
-
-    .card-text {
-        font-size: 1rem;
-        color: #333;
-        text-align: center;
-    }
-
-    .card-text::before {
-        content: "“";
-        font-size: 2rem;
-        vertical-align: top;
-        color: #004a7c;
-        margin-right: 5px;
-    }
-
-    .card-text::after {
-        content: "”";
-        font-size: 2rem;
-        vertical-align: bottom;
-        color: #004a7c;
-        margin-left: 5px;
-    }
-
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 20px 0;
-    }
-
-    .col-md-4 {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 30px;
-    }
-
-    .col-md-4 .card {
-        width: 100%;
-        max-width: 350px;
-    }
 </style>
 <div class="pagelayer-row-holder pagelayer-row pagelayer-auto pagelayer-width-auto">
     <div class="p-hdr8599 pagelayer-col">
@@ -151,21 +79,43 @@
         </div>
     </div>
 </div>
-<div class="container">
-    <div class="row">
-        @foreach($clientDetails as $client)
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="{{ asset('clientlogo/' . $client->Image) }}" class="card-img-top" alt="{{ $client->name }}">
-                    {{-- <img  src="frontend/img/i.jpg" alt="" style="object-fit: cover;"> --}}
-                    {{-- <img src="{{ asset('clientlogo/' . $client->Image) }}" class="card-img-top" alt="{{ $client->name }}"> --}}
-                    <div class="card-body">
-                        <h5 class="card-title">{{ $client->name }}</h5>
-                        <p class="card-text">{{ $client->description }}</p>
+
+</div>
+<div id="clientCarousel" class="carousel slide" data-bs-ride="carousel" style="max-width: 800px; margin: auto;">
+    <div class="carousel-inner">
+        @foreach($clientDetails as $index => $client)
+            <div class="carousel-item {{ $index == 0 ? 'active' : '' }}" data-bs-interval="5000">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 mb-4">
+                            <div class="row align-items-center" style="background-color: #f9f9f9; padding: 15px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+                                <div class="col-md-4 text-center">
+                                    <img src="{{ asset('clientlogo/' . $client->Image) }}" class="img-fluid" alt="{{ $client->name }}"
+                                         style="border-radius: 50%; width: 80px; height: 80px; object-fit: cover; border: 3px solid #8d959c; padding: 5px;">
+                                </div>
+                                <div class="col-md-8">
+                                    <h3 class="card-title" style="font-weight: bold; color: #333333; margin-bottom: 10px;">{{ $client->name }}</h3>
+                                    <p class="card-text" style="color: #666; font-size: 14px;">{{ $client->description }}</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         @endforeach
     </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#clientCarousel" data-bs-slide="prev" style="width: 5%;">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#clientCarousel" data-bs-slide="next" style="width: 5%;">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
 </div>
+
+
+
 @endsection

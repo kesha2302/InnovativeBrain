@@ -9,7 +9,7 @@
 
 
         <div class="card-body">
-            {{-- <form action="{{url('/')}}/Adminpackageform2" method="POST"> --}}
+
                 <form action="{{url($url)}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="mb-3" >

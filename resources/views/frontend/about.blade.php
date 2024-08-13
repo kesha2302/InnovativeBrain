@@ -1,15 +1,7 @@
 @extends('frontend.layout.main')
 
 @section('main-container')
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+
     <br>
      <div class="p-03p3563 pagelayer-col pagelayer-col-6">
         <div class="pagelayer-col-holder">
@@ -74,7 +66,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    {{-- <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6> --}}
+
                     <h1 class="mb-4">Welcome to InnoBrain Technologies</h1>
                     <p class="mb-4">InnoBrain Technologies is an MSME registered IT organization based out in V.V. Nagar, Anand, Gujarat.
                     <p class="mb-4"> We, at InnoBrain Technologies, primarily focus on providing requirement based IT Solutions.</p>
@@ -82,22 +74,22 @@
                     <p class="mb-4"> We also provide Internship Opportunities with the aim to bridge the gap between Industry and Academia.</p>
                     <div class="row gy-2 gx-4 mb-4">
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right  me-2" style="color: #004a7c"></i>Skilled Instructors</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online Classes</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right  me-2" style="color: #004a7c"></i>Online Classes</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>International Certificate</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right  me-2" style="color: #004a7c"></i>International Certificate</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right  me-2" style="color: #004a7c"></i>Skilled Instructors</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online Classes</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right me-2" style="color: #004a7c"></i>Online Classes</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>International Certificate</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right me-2" style="color: #004a7c"></i>International Certificate</p>
                         </div>
                     </div>
 
@@ -105,6 +97,5 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+
 @endsection

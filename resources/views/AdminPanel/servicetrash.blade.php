@@ -2,19 +2,16 @@
 
 @section('main-container')
 <div class='mt-2 container'>
-    <h3>Trash Packages</h3>
+    <h3>Trash Services</h3>
     <hr>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
 
             <div class="d-flex">
-                {{-- <button type="button" onclick="window.location='{{ url('/Adminpackageform') }}'" class="btn btn-dark btn-circle font-rights">
-                    <i class="bi bi-plus"></i>
-                </button> --}}
                 <a href="{{ url('/Adminservices') }}">
                     <button class="btn btn-dark ml-2">
-                        View Packages</button>
+                        View Services</button>
                 </a>
             </div>
         </div>
@@ -30,8 +27,8 @@
                             <th style="width: 15%;">Service Id</th>
                             <th style="width: 15%;">Title</th>
                             <th style="width: 60%;">Description</th>
-                            <th style="width: 10%;">Created_at</th>
-                            <th style="width: 10%;">Updated_at</th>
+                            <th style="width: 10%;">Created At</th>
+                            <th style="width: 10%;">Updated At</th>
                             <th colspan="2">Action</th>
                         </tr>
                     </thead>

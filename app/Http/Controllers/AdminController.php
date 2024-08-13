@@ -53,7 +53,7 @@ class AdminController extends Controller
         return view('AdminPanel.interndetail')->with($data);
     }
 
-    public function admincareerapplyview()
+    public function admincareerapplyview(Request $request)
     {
         $search=$request['search']??"";
         if($search!=""){

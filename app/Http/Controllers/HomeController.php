@@ -7,6 +7,7 @@ use App\Models\CareerApply;
 use App\Models\Certificate;
 use App\Models\ClientDetail;
 use App\Models\InternshipDetail;
+use App\Models\Services;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -21,7 +22,11 @@ class HomeController extends Controller
 // Service Page
     public function services()
     {
-        return view('frontend.Services');
+        $services=Services::all();
+
+        $data=compact('services');
+
+        return view('frontend.Services')->with($data);
     }
 
 // About Page
@@ -138,8 +143,6 @@ public function applycareerformdata(Request $request)
 
     return redirect('/career');
 
-    // echo "<pre>";
-    // print_r($request->all());
 }
 
 
