@@ -35,3 +35,5 @@ Route::get('/form.success', function () {
 })->name('form.success');
 
 Route::get('/hiring', [HomeController::class, 'hiring']);
+Route::get('/vacancy/{id}', [HomeController::class, 'show'])->name('vacancy.show');
+Route::post('/applyvacancyform', [HomeController::class, 'applycareerformdata']);

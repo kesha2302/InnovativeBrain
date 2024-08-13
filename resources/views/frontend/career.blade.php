@@ -445,7 +445,7 @@
     <p style="font-size: 18px; line-height: 1.8; margin: 0 0 30px; max-width: 800px; margin-left: auto; margin-right: auto;">
         Are you passionate about technology and want to work in high-performing teams? Join us! We work with multi-billion dollar Fortune 500 customers on cutting-edge technologies who demand nothing less than excellence from us. We are committed to building a workplace that fosters inclusivity along with productivity. We offer highly competitive benefits and compensation to our employees.
     </p>
-    <a href="" style="background-color: #c9c0c3; color: white; padding: 15px 30px; font-size: 16px; text-decoration: none; border-radius: 30px; font-weight: bold; display: inline-block; transition: background-color 0.3s ease, transform 0.3s ease; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);"
+    <a href="/hiring" style="background-color: #c9c0c3; color: white; padding: 15px 30px; font-size: 16px; text-decoration: none; border-radius: 30px; font-weight: bold; display: inline-block; transition: background-color 0.3s ease, transform 0.3s ease; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);"
        onmouseover="this.style.backgroundColor='#ff4081'; this.style.transform='scale(1.05)';"
        onmouseout="this.style.backgroundColor='#c9c0c3'; this.style.transform='scale(1)';">
         View Open Positions
