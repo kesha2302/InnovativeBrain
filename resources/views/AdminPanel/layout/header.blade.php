@@ -47,6 +47,14 @@
                 <span class="hide-menu">COMPONENTS</span>
               </li>
               <li class="sidebar-item">
+                <a class="sidebar-link" href="{{url('/Adminbannerdetail')}}" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-news"></i>
+                  </span>
+                  <span class="hide-menu">Banner Details</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
                 <a class="sidebar-link" href="{{url('/Adminservices')}}" aria-expanded="false">
                   <span>
                     <i class="ti ti-settings"></i>

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AdminSignupLoginController;
+use App\Http\Controllers\BannerController;
 use App\Http\Controllers\CareerController;
 use App\Http\Controllers\CertificateController;
 use App\Http\Controllers\ClientDetailController;
@@ -101,3 +102,15 @@ Route::get('/certificate/frocedelete/{id}',[CertificateController::class,'certif
 Route::get('/certificate/restore/{id}',[CertificateController::class,'certificaterestore'])->name('certificate.restore');
 Route::get('/certificate/edit/{id}',[CertificateController::class,'certificateedit'])->name('certificate.edit');
 Route::post('/certificate/update/{id}',[CertificateController::class,'certificateupdate'])->name('certificate.update');
+
+
+// Admin Banner Details
+Route::get('/Adminbannerdetail',[BannerController::class,'adminbannerdetailview']);
+Route::get('/Adminbannerdetailform',[BannerController::class,'adminbannerdetailform']);
+Route::post('/Adminbannerdetailform2', [BannerController::class, 'bannerdetaildata']);
+Route::get('/Adminbannerdetailtrash',[BannerController::class,'bannerdetailtrash']);
+Route::get('/bannerdetail/delete/{id}',[BannerController::class,'bannerdetaildelete'])->name('bannerdetail.delete');
+Route::get('/bannerdetail/frocedelete/{id}',[BannerController::class,'bannerdetailforcedelete'])->name('bannerdetail.forcedelete');
+Route::get('/bannerdetail/restore/{id}',[BannerController::class,'bannerdetailrestore'])->name('bannerdetail.restore');
+Route::get('/bannerdetail/edit/{id}',[BannerController::class,'bannerdetailedit'])->name('bannerdetail.edit');
+Route::post('/bannerdetail/update/{id}',[BannerController::class,'bannerdetailupdate'])->name('bannerdetail.update');

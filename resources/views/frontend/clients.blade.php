@@ -71,7 +71,7 @@
             </div>
             <div class="p-t6u5566 pagelayer-breadcrumb">
                 <span class="pagelayer-breadcrumb-section">
-                    <a href="https://www.innobraintechnologies.in" rel="nofollow">Home</a>
+                    <a href="{{url('/')}}" rel="nofollow">Home</a>
                     <b class="pagelayer-breadcrumb-sep">&nbsp;»&nbsp;</b>
                     <span>Clients</span>
                 </span>

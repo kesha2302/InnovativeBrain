@@ -525,3 +525,15 @@
     padding-left: 0px;
 }
 
+.pagelayer-progress-container {
+    background-color: #f3f3f3;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.pagelayer-progress-bar {
+    height: 30px;
+    border-radius: 25px;
+    background-color: #004a7c;
+    width: 0;
+}

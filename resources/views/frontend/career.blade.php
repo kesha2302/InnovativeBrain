@@ -246,7 +246,7 @@
             </div>
             <div class="p-t6u5566 pagelayer-breadcrumb">
                 <span class="pagelayer-breadcrumb-section">
-                    <a href="https://www.innobraintechnologies.in" rel="nofollow">Home</a>
+                    <a href="{{url('/')}}" rel="nofollow">Home</a>
                     <b class="pagelayer-breadcrumb-sep">&nbsp;»&nbsp;</b>
                     <span>Career</span>
                 </span>
@@ -257,7 +257,7 @@
 <div class="search-section">
     <h2>Search Your Certificate Here</h2>
     <form class="search-form" action="">
-        <input class="form-control" type="search" value="{{$search}}" name="search" placeholder="Search by name" aria-label="Search">
+        <input class="form-control" type="search" value="{{$search}}" name="search" placeholder="Search by Certificate Id" aria-label="Search">
         <button class="btn">Search</button>
         <span class="reset-button">
             <a href="{{url('/career')}}">

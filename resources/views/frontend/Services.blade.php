@@ -240,11 +240,13 @@ button.small {
             font-size: 28px;
             color: #004a7c;
             margin-bottom: 10px;
+
         }
 
         .right-column .service-description p {
             font-size: 18px;
             color: #555555;
+            text-align: justify;
         }
     </style>
 {{-- </head> --}}
@@ -257,7 +259,7 @@ button.small {
                 </div>
                 <div class="p-t6u5566 pagelayer-breadcrumb">
                     <span class="pagelayer-breadcrumb-section">
-                        <a href="https://www.innobraintechnologies.in" rel="nofollow">Home</a>
+                        <a href="{{url('/')}}" rel="nofollow">Home</a>
                         <b class="pagelayer-breadcrumb-sep">&nbsp;»&nbsp;</b>
                         <span>Services</span>
                     </span>
@@ -277,7 +279,7 @@ button.small {
                 <h3><i class="fa fa-check-circle"></i> Summer / Winter Internship</h3>
             </div>
         </div>
-        <div class="right-column">
+        <div class="right-column ">
             <h2>Our Services</h2>
             @foreach($services as $service)
             <div class="service-description">

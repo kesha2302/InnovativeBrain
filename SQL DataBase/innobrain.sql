@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 13, 2024 at 08:04 AM
+-- Generation Time: Aug 14, 2024 at 12:11 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -48,7 +48,7 @@ CREATE TABLE `add_vacancy` (
 
 INSERT INTO `add_vacancy` (`vacancy_id`, `post_for`, `experience`, `required_candidate`, `skills_req`, `description`, `type_of_job`, `last_date`, `responsibility`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 'Frontend Developer', '1 years', 2, 'HTML,CSS,JS', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rerum earum sunt sed hic ab. Hic temporibus vitae soluta. Laudantium nulla corporis amet nostrum velit necessitatibus, obcaecati tempora reprehenderit itaque.', 'Full Time', '2024-09-12', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rerum earum sunt sed hic ab. Hic temporibus vitae soluta. Laudantium nulla corporis amet nostrum velit necessitatibus, obcaecati tempora reprehenderit itaque.', '2024-08-02 05:57:37', '2024-08-02 05:58:42', NULL),
-(2, 'Backend Developer', '2 years', 2, 'HTML,CSS,JS, Reacr, Node', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rerum earum sunt sed hic ab. Hic temporibus vitae soluta. Laudantium nulla corporis amet nostrum velit necessitatibus, obcaecati tempora reprehenderit itaque.', 'Full Time', '2024-10-12', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rerum earum sunt sed hic ab. Hic temporibus vitae soluta. Laudantium nulla corporis amet nostrum velit necessitatibus, obcaecati tempora reprehenderit itaque.', '2024-08-12 00:35:47', '2024-08-12 00:35:47', NULL);
+(2, 'Backend Developer', '2 years', 2, 'HTML,CSS,JS, Reacr, Node', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rerum earum sunt sed hic ab. Hic temporibus vitae soluta. Laudantium nulla corporis amet nostrum velit necessitatibus, obcaecati tempora reprehenderit itaque.', 'Full Time', '2024-10-12', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rerum earum sunt sed hic ab. Hic temporibus vitae soluta. Laudantium nulla corporis amet nostrum velit necessitatibus, obcaecati tempora reprehenderit itaque.', '2024-08-12 00:35:47', '2024-08-13 23:01:03', NULL);
 
 -- --------------------------------------------------------
 
@@ -72,6 +72,32 @@ CREATE TABLE `admindetail` (
 INSERT INTO `admindetail` (`admin_id`, `name`, `email`, `password`, `created_at`, `updated_at`) VALUES
 (1, 'Kesha Patel', 'keshapatel2302@gmail.com', '$2y$12$/jrSD76xhVMym.DmuXSJieV55ZM6bVwy3InPPyvjmFiyMFlosVWkK', '2024-07-31 05:48:21', '2024-07-31 05:48:21'),
 (2, 'Kinjal Shah', '89kinjalshah@gmail.com', '$2y$12$LeH9T3i5AUvrCN3N1/t0GuwCUooA5zc6z3Amdjdrf5GDxLZjpQfVy', '2024-07-31 06:07:34', '2024-08-13 00:32:22');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bannerdata`
+--
+
+CREATE TABLE `bannerdata` (
+  `banner_id` bigint(20) UNSIGNED NOT NULL,
+  `title` varchar(100) NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `bannerdata`
+--
+
+INSERT INTO `bannerdata` (`banner_id`, `title`, `description`, `image`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 'Make The World A Better Place With Skill', 'The Future Belongs To Those Who Learn More Skills And Combine Them In Creative Ways', '1723615507img.jpg', '2024-08-14 00:35:07', '2024-08-14 00:35:07', NULL),
+(2, 'Internship', 'We provide internship opportunities on different IT domains', '1723615875img.jpg', '2024-08-14 00:41:15', '2024-08-14 01:06:22', NULL),
+(3, 'IT Training', 'We also offer various types of basic to advanced IT trainings', '1723615939img.jpg', '2024-08-14 00:42:19', '2024-08-14 01:06:29', NULL),
+(4, 'Project Development', 'We offer fully customized project development services based on customer’s requirements', '1723616316img.jpg', '2024-08-14 00:48:36', '2024-08-14 01:05:10', NULL);
 
 -- --------------------------------------------------------
 
@@ -307,7 +333,9 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (13, '2024_08_06_085805_create_certificate_table', 11),
 (14, '2024_08_07_093758_add_delete_at_to_certificate_table', 12),
 (15, '2024_08_12_035841_create_career_apply_table', 13),
-(16, '2024_08_12_051022_create_career_apply_table', 14);
+(16, '2024_08_12_051022_create_career_apply_table', 14),
+(17, '2024_08_14_041317_create_bannerdata_table', 15),
+(18, '2024_08_14_041919_add_delete_at_to_bannerdata_table', 16);
 
 -- --------------------------------------------------------
 
@@ -365,7 +393,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('FRQDlLZuVIwx3LQ1o8t2ZRvqG59mmSw8g6tpKzaX', 2, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoiS2ZtUVRpSDhHcWhHZlQzVHlpSmVZQXA1cEkyQ1lYYndudE1TdEpCMiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjI7czo4OiJhZG1pbl9pZCI7aToyO30=', 1723528994);
+('OgUptBhrSrWHOaUiyL963YtGzhutX7taD64DbZac', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiN3N6cjNodWIxVnlJMTB1bVVBNU5nWnJ2QUxOQmNnZDdrSFJ5dkhQWSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hYm91dCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1723630022);
 
 -- --------------------------------------------------------
 
@@ -399,6 +427,12 @@ ALTER TABLE `add_vacancy`
 --
 ALTER TABLE `admindetail`
   ADD PRIMARY KEY (`admin_id`);
+
+--
+-- Indexes for table `bannerdata`
+--
+ALTER TABLE `bannerdata`
+  ADD PRIMARY KEY (`banner_id`);
 
 --
 -- Indexes for table `cache`
@@ -514,6 +548,12 @@ ALTER TABLE `admindetail`
   MODIFY `admin_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
+-- AUTO_INCREMENT for table `bannerdata`
+--
+ALTER TABLE `bannerdata`
+  MODIFY `banner_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT for table `career_apply`
 --
 ALTER TABLE `career_apply`
@@ -559,7 +599,7 @@ ALTER TABLE `jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `services`

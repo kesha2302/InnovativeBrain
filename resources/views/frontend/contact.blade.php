@@ -92,11 +92,7 @@ h3 {
     color: #333;
 }
 
-p {
-    margin: 20px 0;
-    font-size: 18px;
-    color: #555;
-}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -198,7 +194,7 @@ button[type="submit"]:hover {
 }
 
 .tab-title {
-    background-color: #357ab8; /* Change to blue */
+    background-color: #357ab8;
     color: #fff;
     padding: 10px 20px;
     font-size: 20px;
@@ -209,6 +205,22 @@ button[type="submit"]:hover {
 
 </style>
 <body>
+    <div class="pagelayer-row-holder pagelayer-row pagelayer-auto pagelayer-width-auto">
+        <div class="p-hdr8599 pagelayer-col">
+            <div class="pagelayer-col-holder">
+                <div class="p-aib1329 pagelayer-post_title">
+                    <div class="pagelayer-post-title">Contact Us</div>
+                </div>
+                <div class="p-t6u5566 pagelayer-breadcrumb">
+                    <span class="pagelayer-breadcrumb-section">
+                        <a href="{{url('/')}}" rel="nofollow">Home</a>
+                        <b class="pagelayer-breadcrumb-sep">&nbsp;»&nbsp;</b>
+                        <span>Contact Us</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
 <div class="contact-container">
         <div class="contact-item">
             <img src="https://www.pngkey.com/png/full/207-2072722_address-symbol-png-download-date-time-venue-icon.png" alt="Address Icon" class="contact-icon">

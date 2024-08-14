@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\AddVacancy;
+use App\Models\Banner;
 use App\Models\CareerApply;
 use App\Models\Certificate;
 use App\Models\ClientDetail;
@@ -16,7 +17,10 @@ class HomeController extends Controller
 //Home Page
     public function home()
     {
-        return view('frontend.index');
+        $banner=Banner::all();
+
+        $data=compact('banner');
+        return view('frontend.index')->with($data);
     }
 
 // Service Page
@@ -82,7 +86,7 @@ class HomeController extends Controller
     $certificate = collect();
 
     if ($search != '') {
-        $certificate = Certificate::where('Name', 'LIKE', "%$search%")->get();
+        $certificate = Certificate::where('Certificate_id', 'LIKE', "%$search%")->get();
     }
     $vacancy= AddVacancy::all();
 
