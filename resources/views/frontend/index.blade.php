@@ -193,11 +193,11 @@
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                 {{-- <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6> --}}
-                <h1 class="mb-4">Welcome to InnoBrain Technologies</h1>
-                <p class="mb-4">InnoBrain Technologies is an MSME registered IT organization based out in V.V. Nagar, Anand, Gujarat.
-                <p class="mb-4"> We, at InnoBrain Technologies, primarily focus on providing requirement based IT Solutions.</p>
-                <p class="mb-4"> We provide IT Training on various Programming Languages, Software Tools & Technologies in Offline/Online Mode to aspirants willing to make/switch career in IT Industry along with Job Placement Assistance.</p>
-                <p class="mb-4"> We also provide Internship Opportunities with the aim to bridge the gap between Industry and Academia.</p>
+                <h1 class="mb-4" style="text-align: justify;">Welcome to InnoBrain Technologies</h1>
+                <p class="mb-4" style="text-align: justify;">InnoBrain Technologies is an MSME registered IT organization based out in V.V. Nagar, Anand, Gujarat.
+                <p class="mb-4" style="text-align: justify;"> We, at InnoBrain Technologies, primarily focus on providing requirement based IT Solutions.</p>
+                <p class="mb-4" style="text-align: justify;"> We provide IT Training on various Programming Languages, Software Tools & Technologies in Offline/Online Mode to aspirants willing to make/switch career in IT Industry along with Job Placement Assistance.</p>
+                <p class="mb-4" style="text-align: justify;"> We also provide Internship Opportunities with the aim to bridge the gap between Industry and Academia.</p>
                 <div class="row gy-2 gx-4 mb-4">
                     <div class="col-sm-6">
                         <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>

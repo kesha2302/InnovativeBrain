@@ -217,8 +217,86 @@ button[type="submit"]:hover {
     margin: 0 -20px 20px -20px;
 }
 
+      .pagelayer-row-holder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .pagelayer-col {
+        width: 100%;
+        max-width: 1200px;
+        padding: 20px;
+        background-color: #004a7c;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        margin-bottom: 40px;
+    }
+
+    .pagelayer-col-holder {
+        text-align: center;
+    }
+    .p-aib1329 .pagelayer-post-title {
+        color: #ffffff;
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 768px) and (min-width: 501px) {
+        .p-aib1329 .pagelayer-post-title {
+            font-size: 42px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .p-aib1329 .pagelayer-post-title {
+            font-size: 34px;
+        }
+    }
+
+    /* Breadcrumb Styles */
+    .p-t6u5566 .pagelayer-breadcrumb-section a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .p-t6u5566 .pagelayer-breadcrumb-section a:hover {
+        color: #a8c8f4;
+        text-decoration: underline;
+    }
+
+    .p-t6u5566 .pagelayer-breadcrumb-section {
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+
+    .p-t6u5566 .pagelayer-breadcrumb-sep {
+        color: #ffffff;
+    }
+
 </style>
 <body>
+
+<div class="pagelayer-row-holder pagelayer-row pagelayer-auto pagelayer-width-auto">
+    <div class="p-hdr8599 pagelayer-col">
+        <div class="pagelayer-col-holder">
+            <div class="p-aib1329 pagelayer-post_title">
+                <div class="pagelayer-post-title">Contact Us</div>
+            </div>
+            <div class="p-t6u5566 pagelayer-breadcrumb">
+                <span class="pagelayer-breadcrumb-section">
+                    <a href="{{url('/')}}" rel="nofollow">Home</a>
+                    <b class="pagelayer-breadcrumb-sep">&nbsp;»&nbsp;</b>
+                    <span>Contact Us</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="contact-container">
         <div class="contact-item">
             <img src="https://www.pngkey.com/png/full/207-2072722_address-symbol-png-download-date-time-venue-icon.png" alt="Address Icon" class="contact-icon">

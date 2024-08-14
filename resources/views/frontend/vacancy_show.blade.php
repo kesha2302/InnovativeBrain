@@ -4,6 +4,7 @@
 <h2 class="text-center m-3">Vacancy Details</h2>
 
 <div class="card mt-2 text-center" style="width: 100%;">
+
     <div class="card-body">
         <h4 class="card-title">Post: {{ $vacancy->post_for }}</h4>
         <p class="card-text">
