@@ -26,7 +26,6 @@ Route::post('/contact2', [HomeController::class, 'contact2']);
 
 
 Route::post('/submit2-form', [FrontendServiceController::class, 'submitForm'])->name('submit2.form');
-Route::post('/submit-form', [FrontendContactController::class, 'submitForm'])->name('submit.form');
 Route::get('/career', [HomeController::class, 'career']);
 
 Route::get('/hiring', [HomeController::class, 'hiring']);

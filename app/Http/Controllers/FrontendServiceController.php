@@ -20,7 +20,7 @@ class FrontendServiceController extends Controller
 
         // Check validation
         if ($validator->fails()) {
-            return redirect()->back()->withErrors($validator)->withInput();
+            return redirect()->back()->withErrors($validator)->withInput()->with('error', 'There was an error in submitting the form; please try again.');
         }
 
         // Process the validated data and save to database
@@ -32,6 +32,6 @@ class FrontendServiceController extends Controller
         ]);
 
 
-        return redirect('/service');
+        return redirect()->back()->with('success', 'Your form has been submitted successfully.');
     }
 }

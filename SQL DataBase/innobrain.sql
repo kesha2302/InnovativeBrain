@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 14, 2024 at 12:11 PM
+-- Generation Time: Aug 16, 2024 at 08:15 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -94,7 +94,7 @@ CREATE TABLE `bannerdata` (
 --
 
 INSERT INTO `bannerdata` (`banner_id`, `title`, `description`, `image`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'Make The World A Better Place With Skill', 'The Future Belongs To Those Who Learn More Skills And Combine Them In Creative Ways', '1723615507img.jpg', '2024-08-14 00:35:07', '2024-08-14 00:35:07', NULL),
+(1, 'Make The World A Better Place With Skill', 'The Future Belongs To Those Who Learn More Skills And Combine Them In Creative Ways', '1723615507img.jpg', '2024-08-14 00:35:07', '2024-08-14 06:15:04', NULL),
 (2, 'Internship', 'We provide internship opportunities on different IT domains', '1723615875img.jpg', '2024-08-14 00:41:15', '2024-08-14 01:06:22', NULL),
 (3, 'IT Training', 'We also offer various types of basic to advanced IT trainings', '1723615939img.jpg', '2024-08-14 00:42:19', '2024-08-14 01:06:29', NULL),
 (4, 'Project Development', 'We offer fully customized project development services based on customer’s requirements', '1723616316img.jpg', '2024-08-14 00:48:36', '2024-08-14 01:05:10', NULL);
@@ -147,7 +147,8 @@ CREATE TABLE `career_apply` (
 
 INSERT INTO `career_apply` (`careerapply_id`, `vacancy_id`, `name`, `email`, `contact`, `resume`, `linkedin_url`, `created_at`, `updated_at`) VALUES
 (1, 1, 'Kirti Sharma', 'kirti23@gmail.com', 987654321, 'resume.pdf', 'https://in.linkedin.com/', '2024-08-12 05:34:00', '2024-08-12 05:34:00'),
-(2, 2, 'Harsh Patel', 'keshapatel2302@gmail.com', 987654321, '1723457370_WeeklyActivity -11.pdf', NULL, '2024-08-12 04:39:30', '2024-08-12 04:39:30');
+(2, 2, 'Harsh Patel', 'keshapatel2302@gmail.com', 987654321, '1723457370_WeeklyActivity -11.pdf', NULL, '2024-08-12 04:39:30', '2024-08-12 04:39:30'),
+(3, 2, 'Ami Patel', 'amipatel0811@gmail.com', 987654321, '1723784523_git-cheat-sheet-education.pdf', NULL, '2024-08-15 23:32:03', '2024-08-15 23:32:03');
 
 -- --------------------------------------------------------
 
@@ -195,8 +196,14 @@ CREATE TABLE `clientdetail` (
 --
 
 INSERT INTO `clientdetail` (`client_id`, `name`, `description`, `Image`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'Home Decor', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rerum earum sunt sed hic ab. Hic temporibus vitae soluta. Laudantium nulla corporis amet nostrum velit necessitatibus, obcaecati tempora reprehenderit itaque.', '1722938505img.png', '2024-08-06 04:31:45', '2024-08-06 04:35:37', NULL),
-(2, 'Tour and Travels', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rerum earum sunt sed hic ab. Hic temporibus vitae soluta. Laudantium nulla corporis amet nostrum velit necessitatibus, obcaecati tempora reprehenderit itaque.', '1722938781img.png', '2024-08-06 04:36:21', '2024-08-06 04:36:21', NULL);
+(1, 'Home Decor', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rerum earum sunt sed hic ab. Hic temporibus vitae soluta. Laudantium nulla corporis amet nostrum velit necessitatibus, obcaecati tempora reprehenderit itaque.', '1722938505img.png', '2024-08-06 04:31:45', '2024-08-16 00:05:02', '2024-08-16 00:05:02'),
+(2, 'Tour and Travels', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rerum earum sunt sed hic ab. Hic temporibus vitae soluta. Laudantium nulla corporis amet nostrum velit necessitatibus, obcaecati tempora reprehenderit itaque.', '1722938781img.png', '2024-08-06 04:36:21', '2024-08-16 00:05:04', '2024-08-16 00:05:04'),
+(3, 'DigTech', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rerum earum sunt sed hic ab. Hic temporibus vitae soluta. Laudantium nulla corporis amet nostrum velit necessitatibus, obcaecati tempora reprehenderit itaque.', '1723786220img.jpg', '2024-08-16 00:00:20', '2024-08-16 00:00:20', NULL),
+(4, 'Infinity Web', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rerum earum sunt sed hic ab. Hic temporibus vitae soluta. Laudantium nulla corporis amet nostrum velit necessitatibus, obcaecati tempora reprehenderit itaque.', '1723786240img.jpg', '2024-08-16 00:00:40', '2024-08-16 00:00:40', NULL),
+(5, 'Orspeak IT', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rerum earum sunt sed hic ab. Hic temporibus vitae soluta. Laudantium nulla corporis amet nostrum velit necessitatibus, obcaecati tempora reprehenderit itaque.', '1723786267img.jpg', '2024-08-16 00:01:07', '2024-08-16 00:01:07', NULL),
+(6, 'Smart Thinking', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rerum earum sunt sed hic ab. Hic temporibus vitae soluta. Laudantium nulla corporis amet nostrum velit necessitatibus, obcaecati tempora reprehenderit itaque.', '1723786491img.jpg', '2024-08-16 00:04:51', '2024-08-16 00:04:51', NULL),
+(7, 'NeoTric Technologies', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rerum earum sunt sed hic ab. Hic temporibus vitae soluta. Laudantium nulla corporis amet nostrum velit necessitatibus, obcaecati tempora reprehenderit itaque.', '1723786683img.png', '2024-08-16 00:08:03', '2024-08-16 00:08:03', NULL),
+(8, 'IgniteBrain Technologies', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rerum earum sunt sed hic ab. Hic temporibus vitae soluta. Laudantium nulla corporis amet nostrum velit necessitatibus, obcaecati tempora reprehenderit itaque.', '1723787371img.jpg', '2024-08-16 00:19:31', '2024-08-16 00:20:49', NULL);
 
 -- --------------------------------------------------------
 
@@ -237,7 +244,8 @@ CREATE TABLE `inquiry` (
 INSERT INTO `inquiry` (`inquiry_id`, `name`, `email`, `contact`, `interested_in`, `created_at`, `updated_at`) VALUES
 (1, 'Kesha Patel', 'keshapatel6542@gmail.com', 987654321, 'Web Development', '2024-08-01 10:57:20', '2024-08-01 10:57:20'),
 (2, 'Kirti Sharma', 'kirti23@gmail.com', 987654321, 'Other', '2024-08-11 23:33:57', '2024-08-11 23:33:57'),
-(3, 'Isha Patel', 'isha23@gmail.com', 987654321, 'IT Training', '2024-08-12 22:52:14', '2024-08-12 22:52:14');
+(3, 'Isha Patel', 'isha23@gmail.com', 987654321, 'IT Training', '2024-08-12 22:52:14', '2024-08-12 22:52:14'),
+(4, 'Abhi Bhalodia', 'abhi23@gmail.com', 1234567890, 'Internship', '2024-08-15 22:55:13', '2024-08-15 22:55:13');
 
 -- --------------------------------------------------------
 
@@ -264,7 +272,12 @@ INSERT INTO `internship` (`intern_id`, `name`, `email`, `contact`, `resume`, `me
 (1, 'Kesha Patel', 'keshapatel6542@gmail.com', 987654321, 'resume.pdf', 'I have attached my cv kindly go through my cv.', '2024-08-01 11:13:52', '2024-08-01 11:13:52'),
 (2, 'Kesha Patel', 'keshapatel2302@gmail.com', 1234567890, '1723108466_EAadhaar_Leena Pate 55.pdf', 'ZSdxfcgvb', '2024-08-08 03:44:26', '2024-08-08 03:44:26'),
 (3, 'Kirti', 'kirti23@gmail.com', 987654321, '1723438567_Internship___Project_Report_Guidelines__3180701__661242.pdf', 'ASDFTGYHUJ', '2024-08-11 23:26:07', '2024-08-11 23:26:07'),
-(4, 'Isha Patel', 'isha23@gmail.com', 987654321, '1723523103_Hoop.pdf', 'I want Intership in React.', '2024-08-12 22:55:03', '2024-08-12 22:55:03');
+(4, 'Isha Patel', 'isha23@gmail.com', 987654321, '1723523103_Hoop.pdf', 'I want Intership in React.', '2024-08-12 22:55:03', '2024-08-12 22:55:03'),
+(5, 'Abhi Bhalodia', 'abhi23@gmail.com', 987654321, '1723782633_git-cheat-sheet-education.pdf', 'I want internship.', '2024-08-15 23:00:33', '2024-08-15 23:00:33'),
+(6, 'Parth Patel', 'jinu23@gmail.com', 1234567890, '1723782772_git-cheat-sheet-education.pdf', 'I want internship in frontend.', '2024-08-15 23:02:52', '2024-08-15 23:02:52'),
+(7, 'Ami Patel', 'keshapatel2302@gmail.com', 987654321, '1723782904_1723108466_EAadhaar_Leena Pate 55.pdf', 'qwedfvcxaSD', '2024-08-15 23:05:04', '2024-08-15 23:05:04'),
+(8, 'Janvi Patel', 'keshapatel2302@gmail.com', 987654321, '1723783057_1723108466_EAadhaar_Leena Pate 55.pdf', 'ZASXdfcgh', '2024-08-15 23:07:37', '2024-08-15 23:07:37'),
+(9, 'Kesha Patel', 'keshapatel2302@gmail.com', 987654321, '1723783148_1723108466_EAadhaar_Leena Pate 55.pdf', 'AQWSEDFRGH', '2024-08-15 23:09:08', '2024-08-15 23:09:08');
 
 -- --------------------------------------------------------
 
@@ -393,7 +406,9 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('OgUptBhrSrWHOaUiyL963YtGzhutX7taD64DbZac', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiN3N6cjNodWIxVnlJMTB1bVVBNU5nWnJ2QUxOQmNnZDdrSFJ5dkhQWSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hYm91dCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1723630022);
+('k3pccWOrEpkYnZZ0RtuSevtM20kayn8mH4QDxx1p', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiUEZXckZLUVRpQVBJWkptcE9DeEppWUg2YThScGxaYlZCWUZxSFY3ayI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjk6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9jbGllbnRzIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1723788306),
+('RgcC49Pp9l4tb8qzM3k11GsObjhFkeU6I2wHmCFM', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiV3RGNWhFdHM4NnFrMHBvUFZtOGFDYmNPODBWdFhCWG1odkluM2lJQyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1723781504),
+('sCsL3zwIW65AL6owhYVrv9klnrhtvwAiOm0oPJGo', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoibWRvdFhPWXl6R25ZaWdOam5uRklXdlZ4eDdzUjZocUgzNGVHT0NLRiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9BZG1pbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1723781504);
 
 -- --------------------------------------------------------
 
@@ -557,7 +572,7 @@ ALTER TABLE `bannerdata`
 -- AUTO_INCREMENT for table `career_apply`
 --
 ALTER TABLE `career_apply`
-  MODIFY `careerapply_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `careerapply_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `certificate`
@@ -569,7 +584,7 @@ ALTER TABLE `certificate`
 -- AUTO_INCREMENT for table `clientdetail`
 --
 ALTER TABLE `clientdetail`
-  MODIFY `client_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `client_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -581,13 +596,13 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `inquiry`
 --
 ALTER TABLE `inquiry`
-  MODIFY `inquiry_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `inquiry_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `internship`
 --
 ALTER TABLE `internship`
-  MODIFY `intern_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `intern_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `jobs`

@@ -22,7 +22,8 @@ class FrontendContactController extends Controller
 
         // Check validation
         if ($validator->fails()) {
-            return redirect()->back()->withErrors($validator)->withInput();
+            return redirect()->back()->withErrors($validator)->withInput()
+            ->with('error', 'There was an error in submitting the form; please try again.');
         }
         if ($request->hasFile('resume')) {
             $resumePath = $request->file('resume')->store('resumes', 'public'); // Store in public storage
@@ -39,6 +40,6 @@ class FrontendContactController extends Controller
 
 
         // Redirect to a success page
-        return redirect('/contact');
+        return redirect('/contact')->with('success', 'Your form has been submitted successfully!');
     }
 }

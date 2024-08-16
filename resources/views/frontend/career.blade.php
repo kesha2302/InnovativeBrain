@@ -238,6 +238,12 @@
     }
 </style>
 
+@if ($notFound)
+    <script>
+        alert('Certificate ID not found. Please try again.');
+    </script>
+@endif
+
 <div class="pagelayer-row-holder pagelayer-row pagelayer-auto pagelayer-width-auto">
     <div class="p-hdr8599 pagelayer-col">
         <div class="pagelayer-col-holder">

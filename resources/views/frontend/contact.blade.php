@@ -203,6 +203,8 @@ button[type="submit"]:hover {
     margin: 0 -20px 20px -20px;
 }
 
+
+
 </style>
 <body>
     <div class="pagelayer-row-holder pagelayer-row pagelayer-auto pagelayer-width-auto">
@@ -240,33 +242,63 @@ button[type="submit"]:hover {
     </div>
 
 </header>
+
+
+
 <div class="content">
     <div class="image-container">
         <img src="https://iatp.iusd.org/sites/iatp/files/images/pages/squareimages/student-internship.jpg" alt="Office Image">
     </div>
     <div class="form-container">
         <h2 class="tab-title" style="background-color: #004a7c">Internship</h2>
+
+
         <form action="{{ url('/contact2') }}" method="post" enctype="multipart/form-data">
             @csrf
             <label for="name">Name*</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" >
+            @error('name')
+                    <div class="text-danger">{{ $message }}</div>
+            @enderror
 
             <label for="email">Email*</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" >
+            @error('email')
+                    <div class="text-danger">{{ $message }}</div>
+            @enderror
 
             <label for="contact">Contact No.*</label>
-            <input type="text" id="contact" name="contact" required>
+            <input type="text" id="contact" name="contact" >
+            @error('contact')
+                    <div class="text-danger">{{ $message }}</div>
+            @enderror
 
             <label for="resume">Upload Resume *</label>
-            <input type="file" id="resume" name="resume" required>
+            <input type="file" id="resume" name="resume" >
+            @error('resume')
+                    <div class="text-danger">{{ $message }}</div>
+            @enderror
 
             <label for="message">Message</label>
             <textarea id="message" name="message"></textarea>
+            @error('message')
+                    <div class="text-danger">{{ $message }}</div>
+            @enderror
 
             <button type="submit" style="background-color: #004a7c">Submit</button>
         </form>
     </div>
 </div>
 </body>
+<script>
+    @if (session('success'))
+        alert('{{ session('success') }}');
+    @endif
+
+    @if (session('error'))
+        alert('{{ session('error') }}');
+    @endif
+</script>
+
 
 @endsection

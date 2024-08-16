@@ -249,8 +249,7 @@ button.small {
             text-align: justify;
         }
     </style>
-{{-- </head> --}}
-{{-- <body> --}}
+
     <div class="pagelayer-row-holder pagelayer-row pagelayer-auto pagelayer-width-auto">
         <div class="p-hdr8599 pagelayer-col">
             <div class="pagelayer-col-holder">
@@ -294,15 +293,6 @@ button.small {
         <h3 class="section-title bg-white text-center px-3" style="font-size: 30px; color: #00008b;">Inquiry Form</h3>
     </div>
     <div class="form-container">
-        @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-        @endif
 
         @if (session('success'))
         <div class="alert alert-success">
@@ -313,13 +303,22 @@ button.small {
             @csrf
 
             <label for="name">Your Name *</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name">
+            @error('name')
+                    <div class="text-danger">{{ $message }}</div>
+            @enderror
 
             <label for="email">Your Email Id *</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email">
+            @error('email')
+                    <div class="text-danger">{{ $message }}</div>
+            @enderror
 
             <label for="contact">Your Contact Number *</label>
-            <input type="tel" id="contact" name="contact" required>
+            <input type="tel" id="contact" name="contact" >
+            @error('contact')
+                    <div class="text-danger">{{ $message }}</div>
+            @enderror
 
             <label for="interest">Interested in ?</label>
             <select id="interest" name="interested_in">
@@ -328,10 +327,23 @@ button.small {
                 <option value="IT Training">IT Training</option>
                 <option value="Other">Other</option>
             </select>
+            @error('interested_in')
+                    <div class="text-danger">{{ $message }}</div>
+            @enderror
 
             <button type="submit" class="small">Submit</button>
         </form>
         <h5>Are you looking for an internship ?<a href="{{url('/contact')}}" style="color:#004a7c">Click Here</a> </h5>
     </div>
+
+    <script>
+        @if (session('success'))
+            alert('{{ session('success') }}');
+        @endif
+
+        @if (session('error'))
+            alert('{{ session('error') }}');
+        @endif
+    </script>
 
 @endsection

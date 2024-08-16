@@ -57,7 +57,8 @@ class HomeController extends Controller
         ]);
 
         if ($validator->fails()) {
-            return redirect()->back()->withErrors($validator)->withInput();
+            return redirect()->back()->withErrors($validator)->withInput()
+            ->with('error', 'There was an error in submitting the form; please try again.');
         }
 
         $user = new InternshipDetail();
@@ -75,7 +76,7 @@ class HomeController extends Controller
 
         $user->save();
 
-        return redirect('/contact');
+        return redirect('/contact')->with('success', 'Your form has been submitted successfully!');
     }
 
 // Career Page
@@ -84,13 +85,19 @@ class HomeController extends Controller
     $search = $request->input('search', '');
 
     $certificate = collect();
+    $notFound = false;
 
     if ($search != '') {
-        $certificate = Certificate::where('Certificate_id', 'LIKE', "%$search%")->get();
+        $certificate = Certificate::where('Certificate_id', 'LIKE', "$search")->get();
+
+        if ($certificate->isEmpty()) {
+            $notFound = true;
+        }
     }
+
     $vacancy= AddVacancy::all();
 
-    $data = compact('certificate', 'search','vacancy');
+    $data = compact('certificate', 'search','vacancy','notFound');
 
     return view('frontend.career')->with($data);
 }
@@ -127,7 +134,8 @@ public function applycareerformdata(Request $request)
     if ($validator->fails()) {
         return redirect()->back()
                          ->withErrors($validator)
-                         ->withInput();
+                         ->withInput()
+                         ->with('error', 'There was an error in submitting the form; please try again.');
     }
 
     $user= new CareerApply();
@@ -145,7 +153,7 @@ public function applycareerformdata(Request $request)
     }
     $user->save();
 
-    return redirect('/career');
+    return redirect('/career')->with('success', 'Your form has been submitted successfully!');
 
 }
 

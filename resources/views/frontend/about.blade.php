@@ -43,7 +43,6 @@
         }
     }
 
-    / Breadcrumb Styles /
     .p-t6u5566 .pagelayer-breadcrumb-section a {
         color: #ffffff;
         text-decoration: none;
