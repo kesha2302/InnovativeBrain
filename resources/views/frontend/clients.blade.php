@@ -80,77 +80,8 @@
     </div>
 </div>
 
-{{-- <div class="container">
-    <div class="row">
-        @foreach($clientDetails as $client)
-            <div class="col-md-6 mb-4">
-                <div class="row align-items-center">
-                    <div class="col-md-4">
-                        <img src="{{ asset('clientlogo/' . $client->Image) }}" class="img-fluid" alt="{{ $client->name }}">
-                    </div>
-                    <div class="col-md-8">
-                        <h5 class="card-title">{{ $client->name }}</h5>
-                        <p class="card-text">{{ $client->description }}</p>
-                    </div>
-                </div>
-            </div>
-        @endforeach
-    </div>
-</div> --}}
-{{-- <div class="container">
-    <div class="row">
-        @foreach($clientDetails as $client)
-            <div class="col-md-6 mb-4">
-                <div class="row align-items-center" style="background-color: #f9f9f9; padding: 15px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-                    <div class="col-md-4 text-center">
-                        <img src="{{ asset('clientlogo/' . $client->Image) }}" class="img-fluid" alt="{{ $client->name }}"
-                             style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover; border: 3px solid #8d959c; padding: 5px;">
-                    </div>
-                    <div class="col-md-8">
-                        <h5 class="card-title" style="font-weight: bold; color: #333; margin-bottom: 10px;">{{ $client->name }}</h5>
-                        <p class="card-text" style="color: #666; font-size: 14px;">{{ $client->description }}</p>
-                    </div>
-                </div>
-            </div>
-        @endforeach
-    </div>
-</div> --}}
-
-{{-- <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        @foreach($clientDetails as $index => $client)
-            <div class="carousel-item {{ $index == 0 ? 'active' : '' }}" data-bs-interval="5000">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 mb-4">
-                            <div class="row align-items-center" style="background-color: #f9f9f9; padding: 15px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-                                <div class="col-md-4 text-center">
-                                    <img src="{{ asset('clientlogo/' . $client->Image) }}" class="img-fluid" alt="{{ $client->name }}"
-                                         style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover; border: 3px solid #8d959c; padding: 5px;">
-                                </div>
-                                <div class="col-md-8">
-                                    <h5 class="card-title" style="font-weight: bold; color: #333; margin-bottom: 10px;">{{ $client->name }}</h5>
-                                    <p class="card-text" style="color: #666; font-size: 14px;">{{ $client->description }}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        @endforeach
-    </div>
-
-    <!-- Carousel Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#clientCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#clientCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button> --}}
 </div>
-<div id="clientCarousel" class="carousel slide" data-bs-ride="carousel" style="max-width: 800px; margin: auto;">
+{{-- <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel" style="max-width: 800px; margin: auto;">
     <div class="carousel-inner">
         @foreach($clientDetails as $index => $client)
             <div class="carousel-item {{ $index == 0 ? 'active' : '' }}" data-bs-interval="5000">
@@ -183,8 +114,43 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
-</div>
+</div> --}}
+<div id="clientCarousel" class="carousel slide" data-bs-ride="carousel" style="max-width: 800px; margin: auto;">
+    <div class="carousel-inner">
+        @foreach($clientDetails->chunk(2) as $index => $clientPair)
+            <div class="carousel-item {{ $index == 0 ? 'active' : '' }}" data-bs-interval="5000">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        @foreach($clientPair as $client)
+                            <div class="col-md-6 mb-4" style="padding-right: 15px; padding-left: 15px;"> <!-- Adjust margin here -->
+                                <div class="row align-items-center" style="background-color: #f9f9f9; padding: 15px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+                                    <div class="col-md-4 text-center">
+                                        <img src="{{ asset('clientlogo/' . $client->Image) }}" class="img-fluid" alt="{{ $client->name }}"
+                                             style="border-radius: 50%; width: 80px; height: 80px; object-fit: cover; border: 3px solid #8d959c; padding: 8px;">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h3 class="card-title" style="font-weight: bold; color: #333333; margin-bottom: 10px;">{{ $client->name }}</h3>
+                                        <p class="card-text" style="color: #666; font-size: 14px;">{{ $client->description }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        @endforeach
+    </div>
 
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#clientCarousel" data-bs-slide="prev" style="width: 5%;">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#clientCarousel" data-bs-slide="next" style="width: 5%;">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
 
 @endsection
