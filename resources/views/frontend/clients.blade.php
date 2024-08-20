@@ -95,7 +95,7 @@
                                         <img src="{{ asset('clientlogo/' . $client->Image) }}" class="img-fluid" alt="{{ $client->name }}"
                                              style="border-radius: 50%; width: 80px; height: 80px; object-fit: cover; border: 3px solid #8d959c; padding: 8px;">
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-8" style="text-align: justify">
                                         <h3 class="card-title" style="font-weight: bold; color: #333333; margin-bottom: 10px;">{{ $client->name }}</h3>
                                         <p class="card-text" style="color: #666; font-size: 14px;">{{ $client->description }}</p>
                                     </div>
